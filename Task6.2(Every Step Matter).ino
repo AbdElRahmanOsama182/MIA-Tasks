@@ -51,9 +51,9 @@ void updateEncoderB() {
   int stateB = digitalRead(encoderPinB);
 
   if (stateA == stateB) {
-    encoderCounts--;
-  } else {
     encoderCounts++;
+  } else {
+    encoderCounts--;
   }
 
   // Apply LPF
